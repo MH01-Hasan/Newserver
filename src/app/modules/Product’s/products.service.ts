@@ -29,6 +29,11 @@ const getAllProduct = async (
   const andCondition = [];
 
   if (searchTerm) {
+    // ✅ Only include fields that are of type string in your schema
+    // const stringFieldsOnly = ProductSearchValues.filter(field =>
+    //   ['name'].includes(field) // replace with actual string fields from your schema
+    // );
+
     andCondition.push({
       $or: ProductSearchValues.map(field => ({
         [field]: {
@@ -62,6 +67,7 @@ const getAllProduct = async (
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);
+
   const total = await Product.countDocuments(findCondition);
 
   return {
@@ -73,6 +79,8 @@ const getAllProduct = async (
     data: result,
   };
 };
+
+
 
 const getSingleProduct = async (id: string): Promise<IProduct> => {
   const result = await Product.findById(id)

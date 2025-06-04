@@ -1,7 +1,7 @@
 import express from 'express';
 import validateRequest from '../../middelware/validateRequest';
-import auth from '../../middelware/auth';
-import { ENUM_USER_Role } from '../../../enums/user';
+// import auth from '../../middelware/auth';
+// import { ENUM_USER_Role } from '../../../enums/user';
 import { ProductController } from './products.controller';
 import { ProductValidation } from './products.validation';
 

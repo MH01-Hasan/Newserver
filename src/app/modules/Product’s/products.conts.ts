@@ -1,3 +1,3 @@
-export const ProductFilterFields = ['searchTerm', 'name', 'category', 'status', 'price'];
+export const ProductFilterFields = ['searchTerm', 'name', 'category'];
 
-export const ProductSearchValues = ['status', 'category', 'price'];
+export const ProductSearchValues = ['name'];

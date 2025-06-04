@@ -1,13 +1,13 @@
 import { Model, Schema } from "mongoose";
 
-export interface IProduct {
+export type IProduct = {
   name: string;
   price: string; // Changed to number for price
   category: Schema.Types.ObjectId;
   stock: number;
   createdAt?: Date;
   updatedAt?: Date;
-}
+};
 
 export type ProductsModel = Model<IProduct, Record<string, unknown>>;
 
@@ -15,6 +15,6 @@ export type ProductsModel = Model<IProduct, Record<string, unknown>>;
 export type IProductSearch = {
   searchTerm?: string;
   name?: string;
-  category?: Schema.Types.ObjectId;
-  status?: string;
+  category?:string ;
+ 
 };
