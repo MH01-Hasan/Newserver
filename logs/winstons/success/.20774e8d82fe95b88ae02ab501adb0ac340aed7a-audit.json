@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\All-Website\\Bank poject\\lussc-server\\logs\\winstons\\success\\.20774e8d82fe95b88ae02ab501adb0ac340aed7a-audit.json",
+    "files": [
+        {
+            "date": 1749010303023,
+            "name": "D:\\All-Website\\Bank poject\\lussc-server\\logs\\winstons\\success\\UM-04-06-2025-10-success.log",
+            "hash": "76a6cbdfc568c5a9853586023cb750113c3943f54aa879c0e13a9cfe7c0c57e5"
+        }
+    ],
+    "hashType": "sha256"
+}
